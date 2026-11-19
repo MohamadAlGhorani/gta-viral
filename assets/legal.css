@@ -1,0 +1,35 @@
+/* Shared styles for the legal pages (privacy, disclaimer). Same tokens as index.html. */
+:root{
+  --bg:#0f0a17;
+  --line:rgba(255,255,255,.10);
+  --text:#fbf7f2;
+  --muted:#b9adc4;
+  --accent:#ff4fa3;
+  --display:"Big Shoulders Display","Impact","Arial Narrow",sans-serif;
+  --body:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+.container{width:min(760px,100% - 32px);margin-inline:auto}
+.top{border-bottom:1px solid var(--line)}
+.top .container{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:inline-flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-family:var(--display);font-weight:900;font-size:24px;text-transform:uppercase}
+.brand img{width:40px;height:40px;border-radius:50%}
+.back{font-size:15px;font-weight:600;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--text)}
+main{padding-block:48px 64px}
+h1,h2{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.95;margin:0}
+h1{font-size:clamp(48px,9vw,80px)}
+h2{font-size:30px;margin-top:40px}
+p,ul{margin:14px 0 0;color:var(--muted)}
+ul{padding-left:22px}
+li+li{margin-top:6px}
+strong{color:var(--text)}
+.updated{margin-top:12px;font-size:15px}
+.footer{border-top:1px solid var(--line);padding-block:24px 32px;font-size:15px;color:var(--muted)}
+.footer .container{display:flex;flex-wrap:wrap;gap:8px 24px}
+.footer a{color:var(--muted);text-decoration:none;font-weight:600}
+.footer a:hover{color:var(--text)}
